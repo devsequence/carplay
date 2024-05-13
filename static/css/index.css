@@ -5026,6 +5026,8 @@ sentinel {
 .metahtml.css84 .gallery1-pagination.opacity .gallery1-page {
     opacity: 0.4;
     transition: 300ms opacity;
+    max-width: 76px;
+    width: 100%;
 }
 
 .metahtml.css84 .gallery1-pagination.opacity .gallery1-page:hover {
@@ -8560,12 +8562,14 @@ sentinel {
     padding: 1.8px;
     transition: background-color 0.3s;
     vertical-align: middle;
+    font-size: 0;
 }
 
 .metahtml.css186 .slider1-page + .slider1-page {
     margin-left: 6px;
 }
 
+.metahtml.css186 .slider1-page.swiper-pagination-bullet-active,
 .metahtml.css186 .slider1-page.is-active {
     background-color: rgb(15, 212, 28);
 }
@@ -11976,4 +11980,12 @@ sentinel {
 .area.screen-xs .container {
     max-width: 737px;
     padding: 0 0px;
+}
+.textable.css59 {
+    text-align: left;
+}
+.textable.css59 strong{
+    position: absolute;
+    white-space: nowrap;
+    right: 0;
 }

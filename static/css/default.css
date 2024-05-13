@@ -2525,7 +2525,7 @@ table td[class*=col-],table th[class*=col-] {
     font-family: 'TTNorms Light';
     font-display: swap;
     src: url(//static.creatium.app/fonts/ttnorms/343165_B_0.eot);
-    src: url(//static.creatium.app/fonts/ttnorms/343165_B_0.eot?#iefix) format('embedded-opentype'),url(//static.creatium.app/fonts/ttnorms/343165_B_0.woff2) format('woff2'),url(//static.creatium.app/fonts/ttnorms/343165_B_0.woff) format('woff'),url(//static.creatium.app/fonts/ttnorms/343165_B_0.ttf) format('truetype')
+    src: url(//static.creatium.app/fonts/ttnorms/343165_B_0.eot?#iefix) format('embedded-opentype')
 }
 
 @font-face {
