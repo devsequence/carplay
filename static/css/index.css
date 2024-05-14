@@ -11989,3 +11989,17 @@ sentinel {
     white-space: nowrap;
     right: 0;
 }
+.marquee{}
+.marquee__inner{
+    animation: marqueeNew 20s linear infinite;
+    width: auto;
+    transition: all 0.1s ease-in-out;
+}
+@keyframes marqueeNew {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

@@ -202,7 +202,7 @@
             z-index: 1
         }</style>
 </head>
-<body class="area font-text-roboto font-header-roboto region-int screen-lg" style="">
+<body class="area font-text-roboto font-header-roboto region-int " style="">
 <div class="area-wrapper">
     <div class="node section-clear section sm-hidden css16 fixation-top fixed"
          data-fixation="{&quot;lg&quot;:&quot;top&quot;,&quot;md&quot;:&quot;top&quot;,&quot;sm&quot;:&quot;top&quot;,&quot;xs&quot;:&quot;none&quot;}"
@@ -515,8 +515,7 @@
                                                                     <div class="bgnormal"><a
                                                                             href="index.html" target=""><img
                                                                             class="lazy" alt=""
-                                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAAXNSR0IArs4c6QAAABNJREFUKFNjZKAQMFKon2HgDQAAA44ABTqZsnQAAAAASUVORK5CYII="
-                                                                            data-lazy-image="../static/img/cpls.svg"
+                                                                            src="../static/img/cpls.svg"
                                                                             data-lazy-image_resize="true"
                                                                             data-lazy-image_detect="css-width"
                                                                             style="border-radius: 0px; --width:2268px; --height:567px; --ratio:4;"></a>
@@ -1612,7 +1611,8 @@
                                                                 class="btn btn-legacy font-text css107"
                                                                 data-action="link" data-highlight="false"
                                                                 data-track-active="false"
-                                                                href="#modal-form" target="_self">
+                                                                data-modal="modal"
+                                                                href="#modal-form" >
                                                             <div class="pad-left" style="width: 34px;"></div>
                                                             <div class="btn-content"><span
                                                                     class="text">ЗАЛИШИТИ ЗАЯВКУ</span></div>
@@ -1827,6 +1827,7 @@
                                                                 class="btn btn-legacy font-text css107"
                                                                 data-action="link" data-highlight="true"
                                                                 data-track-active="false"
+                                                                data-modal="modal"
                                                                 href="#modal-form" target="_self">
                                                             <div class="pad-left" style="width: 34px;"></div>
                                                             <div class="btn-content"><span
@@ -2943,7 +2944,7 @@
                                             <div class="button-wrapper"><a class="btn btn-legacy font-text css198"
                                                                            data-action="link" data-highlight="true"
                                                                            data-track-active="false"
-                                                                           href="https://www.google.com/maps/place/CarPlay+Ukraine/@50.4024347,30.5261033,15z/data=!4m7!3m6!1s0x0:0xf2030cfe1022021f!8m2!3d50.4032165!4d30.5542701!9m1!1b1?hl=ru-UA"
+                                                                           href="https://www.google.com/maps/place/CarPlay+Ukraine/@50.4024347,30.5261033,15z/data=!4m7!3m6!1s0x0:0xf2030cfe1022021f!8m2!3d50.4032165!4d30.5542701!9m1!1b1?hl=ru-UA"-
                                                                            target="_blank">
                                                 <div class="pad-left" style="width: 20px;"></div>
                                                 <div class="btn-content"><span class="text">Google рейтинг</span></div>
@@ -3283,7 +3284,7 @@
                         <div class="node widget-button widget css41">
                             <div class="button-container full">
                                 <div class="button-wrapper">
-                                    <a class="btn btn-legacy font-text css42" href="#modal-form">
+                                    <a class="btn btn-legacy font-text css42" data-modal="modal" href="#modal-form">
                                         <span class="pad-left" style="width: 34px;"></span>
                                         <span class="btn-content"><span class="text">ЗАЛИШИТИ ЗАЯВКУ</span></span>
                                         <span class="pad-right" style="width: 34px;"></span>
@@ -3485,6 +3486,9 @@
                             <div class="marquee__inner">
                                 <p class="textable css248">Apple CarPlay <span style="color: rgb(44, 240, 57);">•</span> Android Auto <span style="color: rgb(44, 240, 57);">•</span> Apple CarPlay <span style="color: rgb(44, 240, 57);">•</span> Android Auto<span style="color: rgb(44, 240, 57);">&nbsp;•</span> Apple CarPlay <span style="color: rgb(44, 240, 57);">•</span> Android Auto<span style="color: rgb(44, 240, 57);">&nbsp;•</span> Apple CarPlay <span style="color: rgb(44, 240, 57);">•</span> Android Auto <span style="color: rgb(44, 240, 57);">•</span> Apple CarPlay <span style="color: rgb(44, 240, 57);">•</span> Android Auto</p>
                             </div>
+                            <div class="marquee__inner">
+                                <p class="textable css248">Apple CarPlay <span style="color: rgb(44, 240, 57);">•</span> Android Auto <span style="color: rgb(44, 240, 57);">•</span> Apple CarPlay <span style="color: rgb(44, 240, 57);">•</span> Android Auto<span style="color: rgb(44, 240, 57);">&nbsp;•</span> Apple CarPlay <span style="color: rgb(44, 240, 57);">•</span> Android Auto<span style="color: rgb(44, 240, 57);">&nbsp;•</span> Apple CarPlay <span style="color: rgb(44, 240, 57);">•</span> Android Auto <span style="color: rgb(44, 240, 57);">•</span> Apple CarPlay <span style="color: rgb(44, 240, 57);">•</span> Android Auto</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -3504,10 +3508,7 @@
                                 <div class="cont">
                                     <div class="node widget-map cr-map widget css5">
                                         <div class="macros-map" style="height: 430px;">
-                                            <div class="map" id="ulrz33hwzep13qkrs4yl" data-service="google"
-                                                 data-params="{&quot;center&quot;:[&quot;50.403783&quot;,&quot;30.55466&quot;],&quot;point&quot;:[&quot;50.403783&quot;,&quot;30.55466&quot;],&quot;zoom&quot;:&quot;15&quot;,&quot;type&quot;:&quot;roadmap&quot;}"
-                                                 data-apikey="" style="overflow: hidden;">
-                                            </div>
+                                            <div class="map" id="map"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -4002,8 +4003,15 @@
 
 
 </body>
+<!--// map-->
+<script>
+    const myLatLng = { lat: 50.403284, lng: 30.554188 };
+    const mycenter = { lat: 50.403284, lng: 30.554188 };
+</script>
 <script type="text/javascript" charset="UTF-8" src="../static/libs/jquery.js"></script>
 <script type="text/javascript" charset="UTF-8" src="../static/libs/swiper-bundle.min.js"></script>
 <script type="text/javascript" charset="UTF-8" src="../static/libs/fancybox.umd.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7THpWflv0u70jhfuU4T6KbuNy0fuxME&callback=mapInitialize&v=weekly" async ></script>
+<script src="../static/js/map.js"></script>
 <script type="text/javascript" charset="UTF-8" src="../static/js/index.js"></script>
 </html>
