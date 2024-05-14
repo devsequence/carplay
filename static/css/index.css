@@ -4803,7 +4803,7 @@ sentinel {
     opacity: 0.7;
 }
 
-.metahtml.css79 .gallery1-pagination.opacity .gallery1-page.is-active {
+.metahtml.css79 .gallery1-pagination.opacity .gallery1-page.swiper-slide-thumb-active {
     opacity: 1;
 }
 
@@ -4816,7 +4816,7 @@ sentinel {
     filter: grayscale(0.5);
 }
 
-.metahtml.css79 .gallery1-pagination.gray .gallery1-page.is-active {
+.metahtml.css79 .gallery1-pagination.gray .gallery1-page.swiper-slide-thumb-active {
     filter: grayscale(0);
 }
 
@@ -4829,7 +4829,7 @@ sentinel {
     border-color: rgba(15, 212, 28, 0.5);
 }
 
-.metahtml.css79 .gallery1-pagination.border .gallery1-page.is-active .gallery1-page-image > div {
+.metahtml.css79 .gallery1-pagination.border .gallery1-page.swiper-slide-thumb-active .gallery1-page-image > div {
     border-color: rgb(15, 212, 28);
 }
 
@@ -5034,7 +5034,7 @@ sentinel {
     opacity: 0.7;
 }
 
-.metahtml.css84 .gallery1-pagination.opacity .gallery1-page.is-active {
+.metahtml.css84 .gallery1-pagination.opacity .gallery1-page.swiper-slide-thumb-active {
     opacity: 1;
 }
 
@@ -5047,7 +5047,7 @@ sentinel {
     filter: grayscale(0.5);
 }
 
-.metahtml.css84 .gallery1-pagination.gray .gallery1-page.is-active {
+.metahtml.css84 .gallery1-pagination.gray .gallery1-page.swiper-slide-thumb-active {
     filter: grayscale(0);
 }
 

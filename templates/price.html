@@ -4440,12 +4440,12 @@
                         <div class="node widget-button widget css485">
                             <div class="button-container full">
                                 <div class="button-wrapper">
-                                    <a class="btn btn-legacy font-text css486" href="#modal-form"
+                                    <button class="btn btn-legacy font-text css486"
                                        data-modal="modal">
                                         <div class="pad-left" style="width: 34px;"></div>
                                         <div class="btn-content"><span class="text">ЗАЛИШИТИ ЗАЯВКУ</span></div>
                                         <div class="pad-right" style="width: 34px;"></div>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                             <span class="modal-link" data-uid="ulq3k2hsbv8sppb38rbf_0"></span></div>
@@ -4964,12 +4964,12 @@
                         <div class="node widget-button widget css5">
                             <div class="button-container full">
                                 <div class="button-wrapper">
-                                    <a href="#modal-form" class="btn btn-legacy font-text css518" data-action="modal"
+                                    <button class="btn btn-legacy font-text css518" data-action="modal"
                                             data-modal="modal">
                                         <span class="pad-left" style="width: 12px;"></span>
                                         <span class="btn-content"><i class="fas fa-shopping-cart"></i></span>
                                         <span class="pad-right" style="width: 12px;"></span>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                             <div class="modal nocolors css487" data-name="modal" data-type="modal" data-duration="300"
@@ -4991,6 +4991,9 @@
                             <div class="col" style="width: 50%;">
                                 <div class="cont">
                                     <div class="node widget-map cr-map widget css5">
+                                        <div class="macros-map" style="height: 430px;">
+                                            <div class="map" id="map"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -5358,21 +5361,18 @@
                     <div class="modal4-panel2">
                         <div class="cont">
                             <div class="node widget-form2 cr-form widget css6"
-                                 data-form="{&quot;action&quot;:&quot;order&quot;,&quot;name&quot;:&quot;Заявка (Главная Ua)&quot;,&quot;after&quot;:&quot;url&quot;,&quot;msg&quot;:&quot;Спасибо!\nВаша заявка отправлена.\nВ ближайшее время мы с Вами свяжемся!&quot;,&quot;url&quot;:&quot;/thankyou&quot;,&quot;urlauto&quot;:true,&quot;urlclean&quot;:true,&quot;addhtml&quot;:&quot;&lt;!-- Этот код будет вставлен перед закрывающим тегом BODY --&gt;&quot;,&quot;js&quot;:&quot;alert(\&quot;Этот код выполняется после успешного отправления заявки.\&quot;);&quot;,&quot;sequence&quot;:&quot;stepwise&quot;}"
                                  data-isquiz="false">
                                 <div>
                                     <div class="metahtml css47">
 
                                         <div class="form1-cover">
-                                            <div cr-form-container=""
-                                                 colorside="cover_bgcolored?cover_bgcolor.colorside():_colorside">
+                                            <div>
                                                 <div class="cont">
                                                     <div class="node widget-text cr-text widget css48"><p
                                                             class="textable css49"><strong>ЛИШИТИ ЗАЯВКУ</strong></p>
                                                     </div>
                                                     <div class="node widget-field cr-field widget css50">
-                                                        <div class="metahtml css51"
-                                                             data-vals="{&quot;condition&quot;:&quot;&quot;,&quot;variable&quot;:&quot;&quot;,&quot;variable2&quot;:&quot;&quot;,&quot;text&quot;:&quot;Ім&#39;я&quot;,&quot;type&quot;:&quot;name&quot;,&quot;required&quot;:false,&quot;id&quot;:&quot;&quot;,&quot;valueOn&quot;:&quot;1&quot;,&quot;valueOff&quot;:&quot;0&quot;,&quot;privacy_checkbox&quot;:&quot;Даю согласие на &lt;обработку персональных данных&gt;&quot;,&quot;typing&quot;:&quot;string&quot;,&quot;formula&quot;:&quot;&quot;,&quot;format&quot;:&quot;%result% руб.&quot;,&quot;min&quot;:&quot;0&quot;,&quot;max&quot;:&quot;100&quot;,&quot;step&quot;:&quot;1&quot;,&quot;template&quot;:&quot;&quot;}">
+                                                        <div class="metahtml css51">
                                                             <div cr-field="name" class="is-text">
                                                                 <div class="name">
                                                                     Ім'я
@@ -5454,12 +5454,18 @@
             </div>
         </div>
     </div>
-
 </div>
 
 </body>
+<!--// map-->
+<script>
+    const myLatLng = { lat: 50.403284, lng: 30.554188 };
+    const mycenter = { lat: 50.403284, lng: 30.554188 };
+</script>
 <script type="text/javascript" charset="UTF-8" src="../static/libs/jquery.js"></script>
 <script type="text/javascript" charset="UTF-8" src="../static/libs/swiper-bundle.min.js"></script>
 <script type="text/javascript" charset="UTF-8" src="../static/libs/fancybox.umd.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7THpWflv0u70jhfuU4T6KbuNy0fuxME&callback=mapInitialize&v=weekly" async ></script>
+<script src="../static/js/map.js"></script>
 <script type="text/javascript" charset="UTF-8" src="../static/js/index.js"></script>
 </html>

@@ -214,32 +214,52 @@ var swipersRoot = new Swiper(".slider1-container", {
         },
     }
 });
+var galleryThumbs = new Swiper('.css81 .gallery1-pagination', {
+    loop: true,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+});
 var galleryTop = new Swiper('.css81 .gallery1-container', {
+    loop: true,
     navigation: {
         nextEl: '.css81 .gallery1-next',
         prevEl: '.css81 .gallery1-previous',
     },
-    loop: true,
-    loopedSlides: 7
+    thumbs: {
+        swiper: galleryThumbs,
+    },
 });
-var galleryThumbs = new Swiper('.css81 .gallery1-pagination', {
-    slidesPerView: 'auto',
-    touchRatio: 0.2,
-    slideToClickedSlide: true,
-    loop: true,
-    loopedSlides: 7
-});
-galleryTop.controller.control = galleryThumbs;
-galleryThumbs.controller.control = galleryTop;
-$('.btn-legacy').on('click',  function (e) {
+// var galleryTop = new Swiper('.css81 .gallery1-container', {
+//     navigation: {
+//         nextEl: '.css81 .gallery1-next',
+//         prevEl: '.css81 .gallery1-previous',
+//     },
+//     loop: true,
+// });
+// var galleryThumbs = new Swiper('.css81 .gallery1-pagination', {
+//     slidesPerView: 'auto',
+//     touchRatio: 0.2,
+//     slideToClickedSlide: true,
+//     loop: true,
+// });
+// galleryTop.controller.control = galleryThumbs;
+// galleryThumbs.controller.control = galleryTop;
+$('a[data-modal="modal"]').on('click',  function (e) {
+    e.preventDefault();
     if ($(this).data('modal') === 'modal') {
-        e.preventDefault();
         var targetID = $(this).attr('href');
         $(targetID).addClass('active');
         $('.modal-back').css({'background-color' : 'rgba(0, 0, 0, 0.5)', 'display' : 'block',});
         $('.modal4-root').addClass('is-active');
-        console.log('modal');
     }
+});
+$('button[data-modal="modal"]').on('click',  function (e) {
+    e.preventDefault();
+    var targetID = '#modal-form';
+    $(targetID).addClass('active');
+    $('.modal-back').css({'background-color' : 'rgba(0, 0, 0, 0.5)', 'display' : 'block',});
+    $('.modal4-root').addClass('is-active');
 });
 $('.modal4-close, .modal-back').on('click',  function (e) {
     e.preventDefault();
