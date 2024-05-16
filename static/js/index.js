@@ -256,6 +256,7 @@ $('a[data-modal="modal"]').on('click',  function (e) {
 });
 $('button[data-modal="modal"]').on('click',  function (e) {
     e.preventDefault();
+    console.log('fff');
     var targetID = '#modal-form';
     $(targetID).addClass('active');
     $('.modal-back').css({'background-color' : 'rgba(0, 0, 0, 0.5)', 'display' : 'block',});
