@@ -246,8 +246,8 @@ var galleryTop = new Swiper('.css81 .gallery1-container', {
 // galleryTop.controller.control = galleryThumbs;
 // galleryThumbs.controller.control = galleryTop;
 $('a[data-modal="modal"]').on('click',  function (e) {
-    e.preventDefault();
     if ($(this).data('modal') === 'modal') {
+        e.preventDefault();
         var targetID = $(this).attr('href');
         $(targetID).addClass('active');
         $('.modal-back').css({'background-color' : 'rgba(0, 0, 0, 0.5)', 'display' : 'block',});
